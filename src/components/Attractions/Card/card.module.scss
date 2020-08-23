@@ -1,0 +1,59 @@
+@import "../../../styles/variables";
+
+.card {
+  display: inline-block;
+  overflow: hidden;
+  background-color: $text;
+  margin: 0 1%;
+  width: 18.4%;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  div {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 15vh;
+    margin: 0;
+
+    h3 {
+      display: block;
+      font-family: $DoHyeon;
+      font-size: 1.85rem;
+      color: $primary;
+      padding: 0;
+      margin: 0;
+    }
+
+    span {
+      position: absolute;
+      bottom: 0.75rem;
+      left: 0.75rem;
+      font-size: 1.15rem;
+      font-weight: 700;
+      padding: 0.5rem;
+      display: block;
+      border: 2px solid $secondary;
+      color: $text;
+      background-color: $secondary;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $primary;
+        border-color: $primary;
+        transition: all 0.275s linear;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 20vh;
+  }
+}
